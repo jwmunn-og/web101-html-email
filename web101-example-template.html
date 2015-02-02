@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Web101 HTML Email Template</title>
+        <!--
+            Coded and cleaned up by Justin Munn (@jwmunn) using snippets from these talented people:
+            GlobalGolf's Responsive Template- Sean Margison and Mark Bertone,
+            Salted- Jason Rodriguez (@rodriguezcommaj),
+            Ink by Zurb (zurb.com/ink),
+            MailChimp's Blueprints (github.com/mailchimp/Email-Blueprints).          
+        -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <!-- For Devices with High Pixel Density/Retina Devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- Prevents phone numbers from being shown as a blue link -->
+		<meta name="format-detection" content="telephone=no" />
+		
+        <!-- Conditional Styles for fixing font and spacing issues in Outlook. Learn more here: https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx -->
+        <!--[if gte mso 9]>
+		<style type="text/css">
+			#hero { font-family: Arial Narrow, sans-serif !important; }
+			#headline { font-family: Arial Narrow, sans-serif !important; }
+			.subheadline { font-family: Arial Narrow, sans-serif !important; }
+		</style>
+		<![endif]-->
+
+		<style type="text/css">
+		    /* ---------------------
+            CLIENT-SPECIFIC STYLES
+		    ------------------------ */
+		    /* Force Outlook to provide a "view in browser" message */
+            #outlook a{padding:0;} 
+            
+            /* Force Hotmail to display emails at full width */
+            .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+            
+            /* Force Hotmail to display normal line spacing */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+            
+            /* Prevent WebKit and Windows mobile changing default text sizes */
+            body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} 
+            
+            /* Remove spacing between tables in Outlook 2007 and up */
+            table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+            
+            /* Allow smoother rendering of resized image in Internet Explorer */
+            img{-ms-interpolation-mode:bicubic;}
+            
+            /* RESET STYLES */
+            body{margin:0; padding:0;}
+            img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+            table{border-collapse:collapse !important;}
+            body{height:100% !important; margin:0; padding:0; width:100% !important;}
+            
+            /* CUSTOM STYLES */
+            span.preheader { display:none; }
+            
+            /* RESPONSIVE STYLES */
+            @media all and (max-width: 600px) {
+                body[bgcolor] #container { width: 100% !important;  }
+                body[bgcolor] .column { display: block !important; width: 100% !important; }
+                body[bgcolor] .column-img { width: 100% !important; height: auto !important; max-width: 600px; margin: 0 auto;}
+                body[bgcolor] .column-img-sub { width: 100% !important; height: auto !important; max-width: 450px; margin: 0 auto;}
+                body[bgcolor] .column div { max-width: 400px !important; margin: 0 auto; padding-top: 10px;}
+                }
+            
+            @media all and (max-width: 480px) {
+                body[bgcolor] .column-img-sub { width: 100% !important; height: auto !important; max-width: 600px; margin: 0 auto;}
+                body[bgcolor] #headline { font-size: 32px !important; }
+                body[bgcolor] #subheadline { font-size: 25px !important; }
+                body[bgcolor] .pad { padding-left: 10px !important; padding-right: 10px !important; }
+                body[bgcolor] #button { width: 75% !important; }
+                body[bgcolor] .body-text { font-size: 16px !important; }
+            }
+            
+		</style>
+		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        <!-- DO NOT DELETE THIS COMMENT OR THE SPACE DIRECTLY ABOVE HERE - iOS only displays a small segment of the original email and includes a button at the bottom which reads: "Download remaining XX bytes." *UNLESS* there is a minimum of 1,019 characters before the closing head tag, including spaces and carriage returns. -->
+    </head>
+    <body bgcolor="b7bdbb" style="background-color: #b7bdbb;">
+    <!-- BGN PREHEADER TEXT - Hero primary text should be copied here (as well as into the hero img alt and title). "GlobalGolf" is used in this example in case the preheader is forgotten. -->
+		<div class="preheader" style="padding-top:5px; padding-left: 5px; color:#b7bdbb; background-color: #b7bdbb; display: none;">This is your PreHeader text. It shows up below the subject line of your emails, you'll definitely want to use it.</div>
+    <!-- END PREHEADER TEXT -->
+    <!-- Begin wrapper/background table -->
+        <table bgcolor="b7bdbb" width="100%" cellpadding="5" cellspacing="0" border="0" style="padding-bottom: 5px;">
+            <tr>
+                <!-- Inner table cell centers your content -->
+                <td width="100%" align="center">
+                    <!-- Begin Email Content, suggested widths between 550-650px -->
+                    <table id="container" bgcolor="ffffff" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px;">
+                        <!-- BEGIN CENTERED LOGO -->
+                        <tr>
+							<td align="center" valign="top" width="100%">
+								<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%; border:0; cellpadding:0; cellspacing:0;">
+								    <tr>
+                                        <td align="center" valign="bottom" width="100%" style="padding-bottom: 10px; padding-top: 10px; text-align: center; width: 100%;">
+                                           <img src="http://justinwmunn.com/resources/web101/email-template/web101-template-logo.gif" width="158" height="75" id="logo" alt="Web101 Logo" title="Web101 Logo" style="display: block; border: none; font-family: Tahoma, Arial, sans-serif; color: #ffffff; font-size: 18px; width: 158px; height: 75px; margin: 0 auto;" />
+                                        </td>
+								    </tr>
+								</table>
+							</td>
+                        </tr>
+                        <!-- END CENTERED LOGO -->
+                        <!-- BEGIN LARGE HEADLINE TEXT -->
+                        <tr>
+                            <td id="headline" align="center" width="100%" bgcolor="ffffff" valign="center" style="font-size: 52px; line-height: 1.25; font-family: 'Lora', Georgia, serif; color: #00070b; padding-bottom: 20px; padding-top: 10px;">
+                               <span  style=" font-weight: bold; font-family: Tahoma, Helvetica, Arial, sans-serif; color: #00cc99; padding-bottom: 5px;">Email Template</span><br />
+                            </td>
+                        </tr>
+                        <!-- BEGIN LARGE HEADLINE TEXT -->
+                        <!-- BEGIN LARGE HERO IMAGE -->
+                        <tr>
+                            <td align="center" width="100%" bgcolor="194747" valign="center" style="background-color: #194747;">
+                               <img src="http://placehold.it/600x300&text=Large+Image" class="column-img" width="600" height="300" id="logo" alt="Web101 Logo" title="Web101 Logo" style="display: block; border: none; font-family: Tahoma, Arial, sans-serif; color: #ffffff; font-size: 18px; width: 600px; height: 300px; margin: 0 auto;" />
+                            </td>
+                        </tr>
+                        <!-- END LARGE HERO IMAGE -->
+                        <!-- BEGIN BODY TEXT -->
+                        <tr>
+                            <td class="body-text" class="pad" align="left" width="100%" bgcolor="ffffff" valign="center" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; font-size: 20px; line-height: 1.5; font-family: Georgia, serif; color: #00070b;">
+                                <div id="subheadline" style="font-size: 32px; line-height: 1.25; font-weight: bold; font-family: Tahoma, Helvetica, Arial, sans-serif; color: #00cc99; padding-bottom: 5px">
+                                    Getting Started
+                                </div>
+                                <p style="margin-top: 0px;">
+                                    Customize this template and use it as a base to build your own responsive emails. It&rsquo;s best to rely on <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" style="text-decoration: none; border-bottom: 1px solid #00cc99; font-family: Georgia, serif; color: #00cc99;">web safe fonts</a> for your text as <span style="font-family: courier, monospace; color: #50545b;">@font-face</span> and Google font links aren&rsquo;t well supported.
+                                </p>
+                                <p>Style your text so that it is easy to read. Using <span style="font-family: courier, monospace; color: #50545b;">&lt;div&gt; &lt;span&gt;</span> &amp; <span style="font-family: courier, monospace; color: #50545b;">&lt;p&gt;</span> tags allow you to call out text with special styles. You can even style your Call to Action buttons with CSS so they still show up even when images are turned off.</p>
+                            </td>
+                        </tr>
+                        <!-- END BODY TEXT -->
+                        <!-- BEGIN CTA CONTAINER -->
+                        <tr>
+							<td align="center" valign="top" width="100%" style="text-align:center; vertical-align:top; width:100%;">
+								<!-- BGN CTA BUTTON -->
+								<table id="button" bgcolor="00cc99" cellpadding="0" cellspacing="0" border="0" width="50%" height="50" align="center" style="width:50%; height:50px; border:0; cellpadding:0px; cellspacing:0; background-color:#00cc99;  margin:0 auto; box-shadow: 0 4px 0 #008855; border-radius:10px;">
+									<tbody>
+										<tr>
+											<td width="100%" height="50" valign="middle" align="center" class="opad" style="text-align:center; vertical-align:middle; width:100%; font-family: Tahoma,arial,sans-serif; color:#ffffff; font-size:20px; height:50px;">
+												<a href="http://youtu.be/JguCWAFj_0I" style="text-decoration:none; color:#ffffff; text-transform: uppercase; letter-spacing: 1px;display:block; height: 50px; line-height:50px;">
+													Learn More
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- END CTA BUTTON -->
+								<p style="height:20px; font-size:20px; margin:0;">&nbsp;</p>
+							</td>
+						</tr>
+						<!-- END CTA CONTAINER -->
+						<!-- BGN 2 COLUMN ROW -->
+						<tr>
+							<td bgcolor="#eeeeee" class="pad" align="center" valign="top" width="100%" style="padding-top: 20px; padding-bottom:10px; padding-left:15px; padding-right: 15px; font-size: 20px; line-height: 1.5; font-family: Georgia, serif; color: #00070b;">
+								<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%; border:0; cellpadding: 0px; cellspacing:0;" class="modules">
+									<!-- BGN SUBMODULE ROW -->
+									<tr>
+										<!-- BGN Column 1 -->
+										<td class="column" align="center" valign="top" width="50%" style="text-align:center; vertical-align:top; width:50%;">
+											<table cellspacing="0" cellpadding="5" border="0" width="100%" style="width:100%; border:0; cellpadding:5px; cellspacing:0;">
+												<!-- BGN IMAGE -->
+												<tr>
+													<td align="center" valign="top" width="100%" style="text-align:center; vertical-align:top; width:100%;">
+														<img src="http://placehold.it/450x300" class="column-img-sub" width="100%" height="auto" border="0" alt="Image Placeholder" class="columnImage" style="width:100%; height:auto; font-family:helvetica,arial,sans-serif; font-size:18px; text-align:center; color:#ffffff; background-color:#00cc99; display:block;" />
+													</td>
+												</tr>
+												<!-- END IMAGE -->
+											</table>
+										</td>
+										<!-- END Column 1 -->
+										<!-- BGN Column 2 -->
+										<td class="column" align="center" valign="middle" width="50%" style="text-align:center; vertical-align:middle; width:50%;">
+											<table cellspacing="0" cellpadding="5" border="0" width="100%" style="width:100%; border:0; cellpadding:5px; cellspacing:0;">
+												<!-- BGN TEXT -->
+												<tr>
+													<td align="center" valign="middle" width="100%" style="text-align: center; vertical-align:middle; width:100%;">
+														<div style="font-family: Tahoma, helvetica,arial,sans-serif; font-size:24px; line-height: 1; font-weight: bold; padding-bottom: 5px;">
+																Standard <span style="font-family: courier, monospace; color: #50545b;">&lt;td&gt;</span> Order
+															</a>
+														</div>
+														<div class="body-text" style="font-size: 18px; line-height: 1.5; font-family: Georgia, serif; color: #00070b;">
+															If you have more than 1 column they will stack in mobile in the order of&nbsp;your&nbsp;code.
+														</div>
+														<p style="height:10px; font-size:10px; margin:0;">&nbsp;</p>
+													</td>
+												</tr>
+												<!-- END TEXT -->
+											</table>
+										</td>
+										<!-- END Column 2 -->
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- END 2 COLUMN ROW -->
+						<!-- BEGIN REVERSED TWO COLUMN ROW -->
+						<tr>
+							<td bgcolor="#eeeeee" class="pad" align="center" valign="top" width="100%" style="padding-top: 10px; padding-bottom: 20px; padding-left:15px; padding-right: 15px; font-size: 20px; line-height: 1.25; font-family: 'Lora', Georgia, serif; color: #00070b;">
+								<table dir="rtl" cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%; border:0; cellpadding:0px; cellspacing:0;" class="modules">
+									<!-- BGN SUBMODULE ROW -->
+									<tr>
+										<!-- BGN Column 1 -->
+										<td class="column" dir="ltr" align="center" valign="top" width="50%" style="text-align:center; vertical-align:top; width:50%;">
+											<table cellspacing="0" cellpadding="5" border="0" width="100%" style="width:100%; border:0; cellpadding:5px; cellspacing:0;">
+												<!-- BGN IMAGE -->
+												<tr>
+													<td align="center" valign="top" width="100%" style="text-align:center; vertical-align:top; width:100%;">
+														<img src="http://placehold.it/450x300" class="column-img-sub" width="100%" height="auto" border="0" alt="Image Placeholder" class="columnImage" style="width:100%; height:auto; font-family:helvetica,arial,sans-serif; font-size:18px; text-align:center; color:#ffffff; background-color:#00cc99; display:block;" />
+													</td>
+												</tr>
+												<!-- END IMAGE -->
+											</table>
+										</td>
+										<!-- END Column 1 -->
+										<!-- BGN Column 2 -->
+										<td class="column" dir="ltr" align="center" valign="middle" width="50%" style="text-align:center; vertical-align:middle; width:50%;">
+											<table cellspacing="0" cellpadding="5" border="0" width="100%" style="width:100%; border:0; cellpadding:5px; cellspacing:0;">
+												<!-- BGN TEXT -->
+												<tr>
+													<td align="center" valign="middle" width="100%" style="text-align:center; vertical-align:middle; width:100%;">
+														<div style="font-family: Tahoma, helvetica,arial,sans-serif; font-size:24px; line-height: 1; font-weight: bold; padding-bottom: 5px;">
+																Reversed <span style="font-family: courier, monospace; color: #50545b;">&lt;td&gt;</span> Order
+															</a>
+														</div>
+														<div class="body-text" style="font-size: 18px; line-height: 1.5; font-family: Georgia, serif; color: #00070b;">
+															The code order of your <span style="font-family: courier, monospace; color: #50545b;">&lt;td&gt;</span>&rsquo;s is the same as above but they display in reverse order thanks to the&nbsp;<span style="font-family: courier, monospace; color: #50545b;">dir</span>&nbsp;attribute.
+														</div>
+														<p style="height:10px; font-size:10px; margin:0;">&nbsp;</p>
+													</td>
+												</tr>
+												<!-- END TEXT -->
+											</table>
+										</td>
+										<!-- END Column 2 -->
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- End REVERSED TWO COLUMN ROW -->
+						<!-- BEGIN FOOTER -->
+						<tr>
+                            <td class="pad" align="center" style="background-color: #222222;font-family: Arial, sans-serif; font-size: 12px; line-height: 1.5; padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px; color: #b7bdbb;">
+                                Always include a link to <a href="#" style="color: #00cc99; text-decoration: none; border-bottom: 1px solid #00cc99;">Unsubscribe</a>.
+                            </td>
+                        </tr>
+                        <!-- END FOOTER -->
+                    </table>
+                </td>
+            </tr>
+        </table>
+    <!-- End wrapper/background table -->
+    </body>
+</html>
